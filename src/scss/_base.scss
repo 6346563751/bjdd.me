@@ -1,11 +1,49 @@
-body {
-  font-family: 'eesti';
-  font-size: 16px;
-  background: #FDFDFD;
-  font-family: 'Fanwood Text', serif;
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300;400;500;700&display=swap');
 
+a {
+  text-decoration: underline;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Tenor Sans', sans-serif;
+nav {
+  width: 100%;
+  @media only screen and (min-width: 992px) {
+    height: calc(20vh * 100 / 900);
+    font-size: calc(16vw * 100 / 1440);
+  }
+
+  .logo {
+    @media only screen and (min-width: 992px) {
+      float: left;
+    }
+    position: relative;
+    /*padding-left: calc(16vw * 100 / 1440);*/
+
+    svg {
+      display:none;
+
+      @media only screen and (min-width: 992px) {
+        display:block;
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translateY(-35%) translateX(-25%);
+        width: 200%;
+      }
+    }
+
+    p {
+      font-weight: 700;
+    }
+  }
+
+  .links {
+    @media only screen and (min-width: 992px) {
+      float: right;
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: calc(26vw * 100 / 1440);
+  }
 }

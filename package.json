@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "start-multiple-entries": "parcel index.html centered.html what.html ",
+    "start-multiple-entries": "parcel index.html about.html now.html readinglist.html contact.html",
     "build": "parcel build index.html"
   },
   "dependencies": {
