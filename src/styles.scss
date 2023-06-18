@@ -10,7 +10,11 @@ body {
 }
 
 .top {
-  padding: 0 calc(205vw * 100 / 1440);
+  padding: 0 16px;
+  @media only screen and (min-width: 992px) {
+    padding: 0 calc(205vw * 100 / 1440);
+    padding-top: calc(47vh * 100 / 900);
+  }
   padding-top: calc(47vh * 100 / 900);
 }
 
