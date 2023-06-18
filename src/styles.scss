@@ -187,13 +187,16 @@ nav {
 }
 
 .main {
+  @media only screen and (min-width: 992px) {
+    width: 75%;
+  }
   p {
-    @media only screen and (min-width: 992px) {
-      font-size: calc(16vw * 100 / 1440);
-    }
+    font-size: 16px;
     font-weight: 300;
     padding-top: 10px;
-    color: black;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 28px;
   }
   padding-bottom: calc(47vh * 100 / 900);
 }
