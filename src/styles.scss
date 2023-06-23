@@ -98,6 +98,8 @@ nav {
     }
 
     .picture {
+      animation: opIn 1s;
+      transition-timing-function: ease;
       flex-shrink: 0;
       filter: drop-shadow(10px 30px 1px rgba(252, 227, 5, 0.6));
       padding-top: 70px;
@@ -110,6 +112,7 @@ nav {
         width: calc(250vw * 100 / 1440);
         position: relative;
         filter: drop-shadow(30px 50px 1px rgba(252, 227, 5, 0.6));
+        animation: opInDesk 1s;
       }
 
       img {
@@ -132,14 +135,22 @@ nav {
         padding-left: calc(60vw * 100/1440);
       }
       h1 {
+        transition-timing-function: ease;
+        opacity: 0;
         font-size: 40px;
         @media only screen and (min-width: 992px) {
           font-size: calc(64vw * 100 / 1440);
         }
         font-weight: 500;
+        animation: fadeIn 1s forwards;
+        animation-delay: 1s;
       }
 
       p {
+        transition-timing-function: ease;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+        animation-delay: 2s;
         @media only screen and (min-width: 992px) {
           font-size: calc(16vw * 100 / 1440);
         }
@@ -149,6 +160,10 @@ nav {
       }
 
       svg {
+        transition-timing-function: ease;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+        animation-delay: 2s;
         width: 100%;
         height: auto;
       }
@@ -241,4 +256,19 @@ nav {
   background: #fef9cd;
   padding: 0 16px;
   width: fit-content;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes opInDesk {
+  0% { filter: drop-shadow(0px 0px 1px rgba(252, 227, 5, 0.2)); }
+  100% { filter: drop-shadow(30px 50px 1px rgba(252, 227, 5, 0.6)); }
+}
+
+@keyframes opIn {
+  0% { filter: drop-shadow(0px 0px 1px rgba(252, 227, 5, 0.2)); }
+  100% { filter: drop-shadow(10px 30px 1px rgba(252, 227, 5, 0.6)); }
 }
