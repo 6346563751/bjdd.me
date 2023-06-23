@@ -19,6 +19,7 @@ body {
 }
 
 .home {
+  height: 100%;
   background: linear-gradient(270deg, #E3FFE7 0%, #D9E7FF 100%), #FFFFFF;
   @media only screen and (min-width: 992px) {
     height: 100vh;
