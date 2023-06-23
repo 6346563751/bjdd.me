@@ -134,16 +134,27 @@ nav {
       @media only screen and (min-width: 992px) {
         padding-left: calc(60vw * 100/1440);
       }
-      h1 {
+      div {
         transition-timing-function: ease;
         opacity: 0;
+        animation: fadeIn 1s forwards;
+        animation-delay: 1s;
+      }
+      img {
+        vertical-align:middle;
+        
+        width: 40px;
+        @media only screen and (min-width: 992px) {
+          width: calc(64vw * 100 / 1440);
+        }
+      }
+      h1 {
         font-size: 40px;
         @media only screen and (min-width: 992px) {
           font-size: calc(64vw * 100 / 1440);
         }
         font-weight: 500;
-        animation: fadeIn 1s forwards;
-        animation-delay: 1s;
+        margin-right: 9.5px;
       }
 
       p {
