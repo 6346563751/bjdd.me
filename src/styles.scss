@@ -232,3 +232,13 @@ nav {
     margin: 50px 0;
   }
 }
+
+.code {
+  margin-top: 16px;
+  white-space: pre-line;
+  font-variant-numeric: tabular-nums;
+  font-family: monospace;
+  background: #fef9cd;
+  padding: 0 16px;
+  width: fit-content;
+}
