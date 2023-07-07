@@ -7,6 +7,7 @@ body {
   color: #303D38;
   width: 100vw;
   min-height: 100vh;
+  background: #f9f9f9;
 }
 
 .top {
@@ -21,7 +22,6 @@ body {
 .home {
   min-height: 100vh;
   height: fit-content;
-  background: linear-gradient(270deg, #E3FFE7 0%, #D9E7FF 100%), #FFFFFF;
   @media only screen and (min-width: 992px) {
     height: 100vh;
   }
@@ -246,7 +246,7 @@ nav {
 }
 
 .header {
-  background: linear-gradient(270deg, #E3FFE7 0%, #D9E7FF 100%), #FFFFFF;
+  background: #FCE305;
   border-bottom: 0.5rem solid #FCE305;
 
   h1 {
