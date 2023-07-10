@@ -220,9 +220,6 @@ nav {
 }
 
 .main {
-  @media only screen and (min-width: 992px) {
-    width: 75%;
-  }
   p, h1, h2, h3 {
     padding-top: 10px;
     color: #333;
@@ -265,9 +262,13 @@ nav {
   white-space: pre-line;
   font-variant-numeric: tabular-nums;
   font-family: monospace;
-  background: #fef9cd;
-  padding: 0 16px;
-  width: fit-content;
+  overflow: scroll;
+
+  div {
+    background: #fef9cd;
+    width: fit-content;
+    padding: 0 16px;
+  }
 }
 
 .border-black {
