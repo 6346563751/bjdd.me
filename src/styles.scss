@@ -270,6 +270,24 @@ nav {
   width: fit-content;
 }
 
+.border-black {
+  li {
+    padding: 40px;
+    border-top: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+  }
+  li:hover {;
+    background: #fce305;
+  }
+}
+
+.readinglist {
+  h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
