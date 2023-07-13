@@ -113,7 +113,7 @@ nav {
         width: calc(250vw * 100 / 1440);
         position: relative;
         filter: drop-shadow(30px 50px 1px rgba(252, 227, 5, 0.6));
-        animation: opInDesk 1s;
+        animation: opInDesk 0.5s;
       }
 
       img {
@@ -139,7 +139,7 @@ nav {
         transition-timing-function: ease;
         opacity: 0;
         animation: fadeIn 1s forwards;
-        animation-delay: 1s;
+        animation-delay: 0.5s;
       }
       img {
         vertical-align:middle;
@@ -162,7 +162,7 @@ nav {
         transition-timing-function: ease;
         opacity: 0;
         animation: fadeIn 1s forwards;
-        animation-delay: 2s;
+        animation-delay: 1s;
         @media only screen and (min-width: 992px) {
           font-size: calc(16vw * 100 / 1440);
         }
@@ -175,7 +175,7 @@ nav {
         transition-timing-function: ease;
         opacity: 0;
         animation: fadeIn 1s forwards;
-        animation-delay: 2s;
+        animation-delay: 1s;
         width: 100%;
         height: auto;
       }
