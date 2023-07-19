@@ -44,7 +44,7 @@ nav {
       float: left;
     }
     position: relative;
-    /*padding-left: calc(16vw * 100 / 1440);*/
+    text-align: center;
 
     svg {
       display:none;
@@ -71,6 +71,7 @@ nav {
     }
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: flex-start;
     padding: 0px;
     gap: calc(26vw * 100 / 1440);
